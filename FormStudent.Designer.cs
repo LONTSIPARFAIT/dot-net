@@ -33,7 +33,6 @@
             txtName = new TextBox();
             label2 = new Label();
             panel2 = new Panel();
-            btnSave = new Button();
             label5 = new Label();
             txtSection = new TextBox();
             label4 = new Label();
@@ -72,6 +71,7 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(264, 31);
             txtName.TabIndex = 2;
+            txtName.TextChanged += this.txtName_TextChanged;
             // 
             // label2
             // 
@@ -100,6 +100,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(778, 430);
             panel2.TabIndex = 4;
+            panel2.Paint += this.panel2_Paint;
             // 
             // btnSave
             // 
@@ -112,6 +113,7 @@
             btnSave.TabIndex = 4;
             btnSave.Text = "Enregistrez";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += this.btnSave_click;
             // 
             // label5
             // 
@@ -148,6 +150,7 @@
             txtClass.Name = "txtClass";
             txtClass.Size = new Size(264, 31);
             txtClass.TabIndex = 2;
+            txtClass.TextChanged += this.txtClass_TextChanged;
             // 
             // label3
             // 
@@ -198,5 +201,7 @@
         private Label label5;
         private TextBox txtSection;
         private Button btnSave;
+        private Button btnSave;
+        private Button BtnSave;
     }
 }
