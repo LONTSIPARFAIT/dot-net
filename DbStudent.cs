@@ -25,6 +25,8 @@ namespace CRUD_DotNet
 
             // Definir la requette SQL d'insertion
             string query = "INSERT INTO student (name, resister, class, section) VALUES (@name, @resister, @class, @section)";
+
+            //creation de la commande sql
             MySqlCommand command = new MySqlCommand(query, connect);
 
             command.Parameters.AddWithValue("@name", student.Name);
@@ -36,7 +38,7 @@ namespace CRUD_DotNet
             command.ExecuteNonQuery();
 
             //Afficher un message de confirmation
-            MessageBox
+            MessageBox("");
         }
     }
 }
