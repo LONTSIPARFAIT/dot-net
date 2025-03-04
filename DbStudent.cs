@@ -38,7 +38,7 @@ namespace CRUD_DotNet
             command.ExecuteNonQuery();
 
             //Afficher un message de confirmation
-            MessageBox("");
+           MessageBox.Show("Student added successfully", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
